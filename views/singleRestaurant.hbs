@@ -1,0 +1,21 @@
+<div>
+  <h4>{{name}}</h4>
+  <p>{{price}}</p>
+  <p>{{totalScore}}</p>
+  <p>{{reviewCount}} Reviews</p>
+  <p>Hours today: {{open}} - {{close}}</p>
+  <img src="https://maps.googleapis.com/maps/api/staticmap?center={{latitude}},{{longitude}}&markers=color:red|{{latitude}},{{longitude}}&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyCvBHI3R5b_fpI4JcvbxyY0YmI7fm4Tbnc">
+  <br>
+  <button>Add Review</button>
+</div>
+
+<div>
+  <h4>Reviews</h4>
+  {{#each reviews}}
+  {{userId.name}}
+  {{userId.location}}
+  {{stars}}
+  {{content}}
+  {{/each}}
+
+</div>

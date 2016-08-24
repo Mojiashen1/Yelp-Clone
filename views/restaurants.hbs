@@ -1,0 +1,29 @@
+<form>
+  <p>Name</p>
+  <select>
+    <option><a href = ''>Ascending</a></option>
+{{#each restaurants}}
+  <div>
+    <p>{{name}}</p>
+    <p>{{distance}}</p>
+    <!-- //this thing need to change -->
+    <p>{{price}}</p>
+  </div>
+{{/each}}
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="/restaurants/list/{{prev}}" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    {{#each pages}}
+      <li><a href="/restaurants/list/{{this}}">{{this}}</a></li>
+    {{/each}}
+    <li>
+      <a href="/restaurants/list/{{next}}" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>

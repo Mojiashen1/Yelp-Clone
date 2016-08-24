@@ -1,0 +1,36 @@
+<form method = 'POST' >
+  <p>Add a new restaurant</p>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Category</label>
+    <select class="form-control" name = 'category'>
+      <option>'Korean'</option>
+      <option>'Barbeque'</option>
+      <option>'Casual'</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Relative Price</label>
+    <select multiple class="form-control" name = 'price'>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <input type="text" name='address' class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Open time</label>
+    <input type="time" name='open' class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Close time</label>
+    <input type="time" name='close' class="form-control">
+  </div>
+  <button input = 'submit'>Add Restaurant</button>
+</form>
